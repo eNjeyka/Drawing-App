@@ -1,11 +1,46 @@
 body {
-    background-color: rgb(34, 34, 34);
-    color: white;
+    background-color: antiquewhite;
+    font-family: Arial;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0;
-    padding: 20px;
+}
+
+canvas {
+    border: 2px solid steelblue;
+}
+
+.toolbox {
+    background-color: steelblue;
+    border: 1px solid slateblue;
+    width: 770px;
+    display: flex;
+    padding: 1rem;
+}
+
+#size {
+    height: 42px;
+    width: 42px;
+}
+
+.toolbox > * {
+    background-color: white;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    height: 50px;
+    width: 50px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.toolbox > *:last-child {
+    margin-left: auto;
 }
